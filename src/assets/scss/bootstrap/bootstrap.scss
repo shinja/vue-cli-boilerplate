@@ -1,6 +1,7 @@
-@import 'body.scss';
+@import 'variables';
 
-// Bootstrap and its default variables
-@import '../../../../node_modules/bootstrap/scss/bootstrap';
+@import '~bootswatch/dist/slate/variables';
+@import '~bootstrap/scss/bootstrap';
+@import '~bootswatch/dist/slate/bootswatch';
 // BootstrapVue and its default variables
-@import '../../../../node_modules/bootstrap-vue/src/index';
+@import '~bootstrap-vue/src/index';

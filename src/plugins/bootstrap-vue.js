@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import '@/assets/scss/main.scss'
-import { ButtonPlugin } from 'bootstrap-vue'
+import '@/assets/scss/bootstrap/bootstrap.scss'
+import { BootstrapVue } from 'bootstrap-vue'
 
-Vue.use(ButtonPlugin)
+Vue.use(BootstrapVue)
