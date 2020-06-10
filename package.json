@@ -5,7 +5,9 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lintcss": "stylelint src/assets/**/*.css --fix",
+    "lintscss": "stylelint src/assets/**/*.scss --syntax scss --fix"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -25,6 +27,12 @@
     "node-sass": "^4.12.0",
     "prettier": "^1.19.1",
     "sass-loader": "^8.0.2",
+    "stylelint": "^13.6.0",
+    "stylelint-config-prettier": "^8.0.1",
+    "stylelint-config-sass-guidelines": "^7.0.0",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.17.2",
     "vue-template-compiler": "^2.6.11"
   },
   "husky": {
@@ -33,6 +41,8 @@
     }
   },
   "lint-staged": {
-    "*.{js,vue}": "npm run lint"
+    "*.{js,vue}": "npm run lint",
+    "*.css": "npm run lintcss",
+    "*.scss": "npm run lintscss"
   }
 }
